@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Billing Statement System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Water Billing Statement</h2>
+        
+        <form id="billingForm">
+            <div class="form-group">
+                <label for="customerName">Customer Name</label>
+                <input type="text" id="customerName" required placeholder="Enter customer name">
+            </div>
+
+            <div class="form-group">
+                <label for="consumption">Water Consumption (Cubic Meter)</label>
+                <input type="number" id="consumption" min="0" step="0.01" required placeholder="Enter cubic meters consumed">
+            </div>
+
+            <div class="form-group">
+                <label for="customerType">Customer Type</label>
+                <select id="customerType">
+                    <option value="Regular">Regular</option>
+                    <option value="Senior Citizen">Senior Citizen</option>
+                    <option value="Solo Parent">Solo Parent</option>
+                </select>
+            </div>
+
+            <button type="submit" id="generateBtn">Generate Bill</button>
+        </form>
+
+        <div class="counter-container">
+            <span>Transactions Processed: </span>
+            <span id="transactionCount" class="counter-badge">0</span>
+        </div>
+
+        <div id="billingStatement" class="receipt-card hidden">
+            </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

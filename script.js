@@ -84,7 +84,7 @@ TOTAL BILL    : P${finalNetBill.toFixed(2)}
 });
 
 function sendDataToGoogleSheets(name, consumption, type, rate, amount, discount, netBill) {
-    if (WEB_APP_URL.includes("YOUR_DEPLOYED_GOOGLE_APPS_SCRIPT_URL_HERE")) {
+    if (WEB_APP_URL.includes("https://script.google.com/macros/s/AKfycbz-wRNYWTnybpfc2OdRh-5MFYO0FkDm-IEvnVIJhVejd5bAA6_PQJVpp-uyFPNmB-Zh/exec")) {
         console.warn("Spreadsheet submission bypassed. Please setup and replace the WEB_APP_URL endpoint variable.");
         return;
     }

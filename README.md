@@ -1,0 +1,1 @@
+This is a simple web app wherein a user inputs their full name, the amount of cubic meters of water they used, and their discount privilege category. This can give them an idea how much their bill will be.
